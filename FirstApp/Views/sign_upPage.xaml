@@ -5,6 +5,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+ 
+
+
+
 
     <Frame x:Name="sign_upFrame">
 	    <Grid x:Name="ContentArea" Background="Black" Width="Auto" Height="Auto" >
@@ -76,6 +80,8 @@
                         <Button HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource AccentButtonStyle}" Content="Register" Click="Button_Click_1"/>
                     </StackPanel>
 
+                   
+
 
                 </Grid>
 
@@ -85,4 +91,6 @@
     </Frame>
 
 
+    
 </Page>
+

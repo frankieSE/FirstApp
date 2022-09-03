@@ -70,6 +70,10 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
+            services.AddTransient<FailedLoginDialogBoxViewModel>();
+            services.AddTransient<FailedLoginDialogBoxPage>();
+            services.AddTransient<RegDialogBoxViewModel>();
+            services.AddTransient<RegDialogBoxPage>();
             services.AddTransient<BlankViewModel>();
             services.AddTransient<BlankPage>();
             services.AddTransient<HomeViewModel>();

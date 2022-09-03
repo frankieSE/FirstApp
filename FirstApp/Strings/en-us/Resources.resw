@@ -205,4 +205,18 @@
     <value>Home</value>
     <comment>Page title for HomePage</comment>
   </data>
+  <data name="ShellMenuItem_Views_RegDialogBox.Text" xml:space="preserve">
+    <value>RegDialogBox</value>
+  </data>
+  <data name="RegDialogBox_Title.Text" xml:space="preserve">
+    <value>RegDialogBox</value>
+    <comment>Page title for RegDialogBoxPage</comment>
+  </data>
+  <data name="ShellMenuItem_Views_FailedLoginDialogBox.Text" xml:space="preserve">
+    <value>FailedLoginDialogBox</value>
+  </data>
+  <data name="FailedLoginDialogBox_Title.Text" xml:space="preserve">
+    <value>FailedLoginDialogBox</value>
+    <comment>Page title for FailedLoginDialogBoxPage</comment>
+  </data>
 </root>

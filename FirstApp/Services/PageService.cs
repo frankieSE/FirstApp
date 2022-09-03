@@ -25,6 +25,8 @@ public class PageService : IPageService
         Configure<sign_upViewModel, sign_upPage>();
         Configure<HomeViewModel, HomePage>();
         Configure<BlankViewModel, BlankPage>();
+        Configure<RegDialogBoxViewModel, RegDialogBoxPage>();
+        Configure<FailedLoginDialogBoxViewModel, FailedLoginDialogBoxPage>();
     }
 
     public Type GetPageType(string key)

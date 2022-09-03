@@ -19,6 +19,16 @@ public class ShellViewModel : ObservableRecipient
         get;
     }
 
+    public ICommand MenuViewsFailedLoginDialogBoxCommand
+    {
+        get;
+    }
+
+    public ICommand MenuViewsRegDialogBoxCommand
+    {
+        get;
+    }
+
     public ICommand MenuViewsHomeCommand
     {
         get;
@@ -81,6 +91,8 @@ public class ShellViewModel : ObservableRecipient
         NavigationService.Navigated += OnNavigated;
 
         MenuFileExitCommand = new RelayCommand(OnMenuFileExit);
+        MenuViewsFailedLoginDialogBoxCommand = new RelayCommand(OnMenuViewsFailedLoginDialogBox);
+        MenuViewsRegDialogBoxCommand = new RelayCommand(OnMenuViewsRegDialogBox);
         MenuViewsHomeCommand = new RelayCommand(OnMenuViewsHome);
         MenuViewssign_upCommand = new RelayCommand(OnMenuViewssign_up);
         MenuViewsBlankCommand = new RelayCommand(OnMenuViewsBlank);
@@ -95,6 +107,10 @@ public class ShellViewModel : ObservableRecipient
     private void OnNavigated(object sender, NavigationEventArgs e) => IsBackEnabled = NavigationService.CanGoBack;
 
     private void OnMenuFileExit() => Application.Current.Exit();
+
+    private void OnMenuViewsFailedLoginDialogBox() => NavigationService.NavigateTo(typeof(FailedLoginDialogBoxViewModel).FullName!);
+
+    private void OnMenuViewsRegDialogBox() => NavigationService.NavigateTo(typeof(RegDialogBoxViewModel).FullName!);
 
     private void OnMenuViewsHome() => NavigationService.NavigateTo(typeof(HomeViewModel).FullName!);
 

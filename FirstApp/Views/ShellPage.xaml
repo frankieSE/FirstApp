@@ -41,6 +41,8 @@
                         <MenuFlyoutItem x:Uid="ShellMenuItem_Views_Blank" Command="{x:Bind ViewModel.MenuViewsBlankCommand}" />
                         <MenuFlyoutItem x:Uid="ShellMenuItem_Views_sign_up" Command="{x:Bind ViewModel.MenuViewssign_upCommand}" />
                         <MenuFlyoutItem x:Uid="ShellMenuItem_Views_Home" Command="{x:Bind ViewModel.MenuViewsHomeCommand}" />
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_RegDialogBox" Command="{x:Bind ViewModel.MenuViewsRegDialogBoxCommand}" />
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_FailedLoginDialogBox" Command="{x:Bind ViewModel.MenuViewsFailedLoginDialogBoxCommand}" />
                     </MenuBarItem.Items>
                 </MenuBarItem>
             </MenuBar>

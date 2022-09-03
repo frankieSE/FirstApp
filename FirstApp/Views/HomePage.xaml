@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-	
+  <Frame x:Name="HomeFrame">
     <Grid x:Name="ContentArea" Background="Firebrick" Height="Auto" Width="Auto">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" /> 
@@ -23,5 +23,8 @@
 </NavigationView>
 		
 	
-    </Grid>
+      </Grid>
+
+   </Frame>
+
 </Page>
