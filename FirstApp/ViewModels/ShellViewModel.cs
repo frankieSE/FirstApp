@@ -128,5 +128,5 @@ public class ShellViewModel : ObservableRecipient
 
     private void OnMenuViewsContentGrid() => NavigationService.NavigateTo(typeof(ContentGridViewModel).FullName!);
 
-    private void OnMenuViewsMain() => NavigationService.NavigateTo(typeof(MainViewModel).FullName!);
+    private void OnMenuViewsMain() => NavigationService.NavigateTo(typeof(MainPageViewModel).FullName!);
 }

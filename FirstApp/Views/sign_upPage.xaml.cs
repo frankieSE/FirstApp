@@ -47,13 +47,13 @@ public sealed partial class sign_upPage : Page
         var password = passTB.Text;
 
 
-        SqlConnection conn = new SqlConnection(@"Data Source=localhost;Initial Catalog=reborn_app;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=SEFRANKIE\SQLEXPRESS;Initial Catalog=rebornDB;Integrated Security=True");
 
         SqlCommand cmd;
 
-        if (fname != "" && lname != "" && email != "" && password != "")
+        if (fname != "" && lname != "" && email != "" && phone != "" && password != "")
         {
-            var sql = "insert into reborn_app(fname,lname,email,phone,password) values ('" + fname + "','" + lname + "','" + email + "','" + phone + "','" + password + "')";
+            var sql = "insert into register (fname,lname,email,phone,password) values ('" + fname + "','" + lname + "','" + email + "','" + phone + "','" + password + "')";
 
             cmd = new SqlCommand(sql, conn);
 
